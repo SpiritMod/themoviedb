@@ -1,0 +1,50 @@
+.MovieCart {
+  width: 100%;
+  max-width: 240px;
+  &:hover {
+    .img {
+      //box-shadow: 0 0 8px rgba(#0bd371, 0.8);
+    }
+  }
+  .img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 15px;
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease 0s;
+    img {
+      width: 100%;
+    }
+  }
+  .img_link {
+    width: 100%;
+  }
+  .rating {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.2s ease-in 0s;
+      &:hover {
+        color: lighten(#01b4e4, 10%);
+      }
+    }
+  }
+  .date {
+    //color: #87e6ff;
+    color: rgba(#fff,0.7);
+    font-size: 12px;
+  }
+}

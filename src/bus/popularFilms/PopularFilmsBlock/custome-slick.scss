@@ -1,0 +1,8 @@
+.slick-slider {
+  &:not(.slick-initialized) {
+    white-space: nowrap;
+    > div {
+      display: inline-block;
+    }
+  }
+}

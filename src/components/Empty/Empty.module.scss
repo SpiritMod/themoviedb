@@ -1,0 +1,17 @@
+.Empty {
+  margin: 0 8px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  &__image {
+    height: 80px;
+    margin-bottom: 8px;
+    img {
+      height: 100%;
+      margin: auto;
+    }
+  }
+  &__description {
+    margin: 0;
+  }
+}

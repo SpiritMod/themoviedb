@@ -1,0 +1,9 @@
+export const types = Object.freeze({
+
+    // Sync
+    POPULAR_FILMS_FILL: 'POPULAR_FILMS_FILL',
+    POPULAR_FILMS_PAGER: 'POPULAR_FILMS_PAGER',
+
+    // Async
+    POPULAR_FILMS_FETCH_ASYNC: 'POPULAR_FILMS_FETCH_ASYNC'
+});

@@ -1,0 +1,23 @@
+// SETTINGS
+@import 'settings/settings';
+
+// TOOLS
+@import 'tools/media';
+@import 'tools/justify';
+@import 'tools/vertical';
+@import 'tools/center';
+//@import 'tools/icomoon';
+
+// GENERIC
+@import 'generic/normalize';
+@import 'generic/reset';
+@import 'generic/fonts';
+@import '../assets/fonts/icomoon/style.scss';
+
+// ELEMENTS
+@import 'elements/body';
+@import 'elements/layout';
+
+// OBJECTS
+@import 'objects/container';
+

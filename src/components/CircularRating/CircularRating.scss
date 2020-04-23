@@ -1,0 +1,45 @@
+.CircularRating {
+  width: 38px;
+  height: 38px;
+  padding: 2px;
+  background: #13132a;
+  border-radius: 50%;
+
+
+  .CircularProgressbar {
+    .CircularProgressbar-text {
+      fill: #fff;
+      font-size: 32px;
+      font-weight: bold;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+    .CircularProgressbar-trail {
+      stroke: rgba(#0bd371, 0.4);
+    }
+    .CircularProgressbar-path {
+      stroke: #0bd371;
+    }
+  }
+
+  &.red {
+    .CircularProgressbar {
+      .CircularProgressbar-trail {
+        stroke: rgba(#db2360, 0.4);
+      }
+      .CircularProgressbar-path {
+        stroke: #db2360;
+      }
+    }
+  }
+  &.yellow {
+    .CircularProgressbar {
+      .CircularProgressbar-trail {
+        stroke: rgba(#d2d531, 0.4);
+      }
+      .CircularProgressbar-path {
+        stroke: #d2d531;
+      }
+    }
+  }
+}

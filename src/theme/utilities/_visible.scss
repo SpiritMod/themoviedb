@@ -1,0 +1,15 @@
+@include media('screen', '>1024px') {
+  .u-visible {
+    &--mob {
+      display: none !important;
+    }
+  }
+}
+
+@include media('screen', '<=1024px') {
+  .u-visible {
+    &--desktop {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+$width: 1430px;
+$padding: 40px;
+$padding_tablet: 10px;
+$padding_mobile: 10px;
+$max_width: $width + $padding * 2;
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: $max_width;
+  padding-left: $padding;
+  padding-right: $padding;
+  margin-left: auto;
+  margin-right: auto;
+  &--fullwidth {
+    max-width: 100%;
+    width: 100%;
+  }
+  &--small {
+    position: relative;
+    width: 100%;
+    max-width: 1208px;
+    padding-left: $padding;
+    padding-right: $padding;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &--aside-layout {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+  }
+}
+@include media('screen', '<1201px') {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    &--small {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@include media('screen', '<1025px') {
+  .container {
+    padding-left: $padding_tablet;
+    padding-right: $padding_tablet;
+    &--small {
+      padding-left: $padding_tablet;
+      padding-right: $padding_tablet;
+    }
+  }
+}
+
+@include media('screen', '<768px') {
+  .container {
+    padding-left: $padding_mobile;
+    padding-right: $padding_mobile;
+    &--small {
+      padding-left: $padding_mobile;
+      padding-right: $padding_mobile;
+    }
+    &--aside-layout {
+      flex-direction: column;
+    }
+  }
+}

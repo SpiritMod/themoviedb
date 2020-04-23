@@ -1,0 +1,15 @@
+.header {
+  background: #0c0f1f;
+  padding: 20px 0;
+  z-index: 10;
+  &__no_fill {
+    background: transparent;
+    margin-bottom: -64px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
