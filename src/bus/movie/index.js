@@ -7,6 +7,7 @@ import moment from "moment";
 import classes from './movie.module.scss';
 import {Loader} from "../../components/Loader";
 import {CircularRating} from "../../components/CircularRating";
+import {PersonCart} from "../../components/PersonCart";
 import {minutesGetTime} from "../../helpers/minutesGetTime";
 
 export const Movie = () => {
@@ -33,6 +34,7 @@ export const Movie = () => {
     return i === 0 ? currentVal.name : prevVal + ', ' + currentVal.name;
   }, '');
 
+
   const shortPeople = credits && (
     <ul className={classes.movie_page__section_details_persons}>
       {
@@ -51,6 +53,8 @@ export const Movie = () => {
       }
     </ul>
   );
+
+  const actors = credits.cast && credits.cast.slice(0,10).map(item => <PersonCart key={item.id} {...item} text={item.character} />);
 
   const page = data && (
     <div className={classes.movie_page}>
@@ -117,10 +121,15 @@ export const Movie = () => {
                 {shortPeople}
               </div>
             </div>
-
+            <section className={classes.movie_page__persons}>
+              <div className={classes.movie_page__persons_title}>В главных ролях</div>
+              {actors}
+            </section>
           </div>
         </div>
       </section>
+
+
     </div>
   );
 

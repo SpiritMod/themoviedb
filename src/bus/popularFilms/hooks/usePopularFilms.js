@@ -10,7 +10,7 @@ export const usePopularFilms = () => {
 
   useEffect(() => {
     if (data.length === 0) {
-      dispatch(popularFilmsActions.fetchAsync());
+        dispatch(popularFilmsActions.fetchAsync());
     } else {
       if ((data.length/20) < page ) {
         dispatch(popularFilmsActions.fetchAsync(page));

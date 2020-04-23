@@ -99,7 +99,7 @@ $blue: lighten(#01b4e4, 10%);
       position: relative;
       //background: rgba(#effcff,1);
       background: rgba(#fff,1);
-      padding: 15px 0;
+      padding: 15px 15px;
       &:before {
         content: '';
         height: 86px;
@@ -119,6 +119,7 @@ $blue: lighten(#01b4e4, 10%);
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
+      margin: 0 -15px;
       &_left {
         width: 100%;
         max-width: 30%;
@@ -240,6 +241,19 @@ $blue: lighten(#01b4e4, 10%);
         line-height: 1.2;
         color: var(--grey);
       }
+    }
+  }
+  &__persons {
+    padding: 40px 0 20px;
+    &_title {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.2;
+      color: #000;
+      margin: 0 0 20px;
+    }
+    &_list {
+
     }
   }
 }

@@ -26,19 +26,19 @@ export const useMovieFetch = (id) => {
   console.log('peoples: ', peoples);
 
 
-  const arr = credits && peoples.slice().reduce((unique, item) => {
-    unique.map((itemUnique, index) => {
-      if (itemUnique.id === item.id) {
-        unique[index].job = unique[index].job + ', ' + item.job;
-        return unique
-      } else {
-        return unique.includes(item) ? unique : unique.push(item);
-      }
-    });
-    return unique.length === 0 ? [...unique, item] : unique
-  }, []);
-
-  console.log('arr: ', arr);
+  // const arr = credits && peoples.slice().reduce((unique, item) => {
+  //   unique.map((itemUnique, index) => {
+  //     if (itemUnique.id === item.id) {
+  //       unique[index].job = unique[index].job + ', ' + item.job;
+  //       return unique
+  //     } else {
+  //       return unique.includes(item) ? unique : unique.push(item);
+  //     }
+  //   });
+  //   return unique.length === 0 ? [...unique, item] : unique
+  // }, []);
+  //
+  // console.log('arr: ', arr);
 
   return {
     data,
